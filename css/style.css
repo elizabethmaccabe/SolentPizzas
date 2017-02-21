@@ -1,0 +1,477 @@
+/* Solent Pizza CSS */
+
+/* Elements Present on All Pages */
+body
+{
+    background: url(../images/bGround.png) fixed;
+    margin: 0 auto;
+}
+
+header
+{
+    width: 1000px;
+    height: 300px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+#headerImg
+{
+    width: 100%;
+}
+
+/*NavBar*/
+#navBar
+{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#navBar li
+{
+    float: left;
+    margin-left: 13.4%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+#navBar li a
+{
+    display: block;
+    color: #bf6e15;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navBar a:hover
+{
+    color: #000000;
+}
+
+#navBar .currPage
+{
+    color: #be1622;
+}
+
+#navBar .currPage:hover
+{
+    color: #000000;
+}
+/*END NavBar*/
+
+/*h, p, a*/
+h1
+{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h2
+{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+p
+{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+/*END h, p, a*/
+
+footer
+{
+    width: 1000px;
+    height: 50px;
+    background-color: #ffffff;
+    margin: auto;
+}
+/*END All Page Elements*/
+
+/*Index Page*/
+#wrapperIndex
+{
+    width: 1000px;
+    height: 1133px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    border: solid 5px #be1622;
+    background-color: #ffffff;
+}
+
+#contentIndex
+{
+    width: 1000px;
+    height: 700px;
+    background-color: #f2f2f2;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Image Slideshow Styling*/
+#imgSlideshow
+{
+    width: 800px;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 5% auto auto auto;
+}
+
+#previous
+{
+    width: 5%;
+    float: left;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 27% auto auto 5%;
+}
+
+#next
+{
+    width: 5%;
+    float: right;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: -28% 5% auto auto;
+}
+
+#next:hover
+{
+    opacity: 1.0;
+}
+
+#previous:hover
+{
+    opacity: 1.0;
+}
+/*END Image Slideshow*/
+
+/*DateTime Styling*/
+#dateTime
+{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1.5%;
+    text-align: center;
+}
+/*END DateTime*/
+/*END Index Page*/
+
+/*Contact Page*/
+#wrapperContact
+{
+    width: 1000px;
+    height: 1783px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    border: solid 5px #be1622;
+    background-color: #ffffff;
+}
+
+#contentContact
+{
+    width: 1000px;
+    height: 1350px;
+    background-color: #f2f2f2;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Map Styling*/
+#map
+{
+    width: 600px;
+    height: 450px;
+    padding: 2%;
+    margin: auto;
+}
+/*END Map*/
+
+/*Contact Form Styling*/
+#contactFormWrap
+{
+    width: 600px;
+    height: 450px;
+    padding: 2%;
+    margin: 5% auto auto auto;
+}
+
+#contactForm
+{
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contactForm fieldset
+{
+    border: 0;
+}
+
+#contactForm input
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: 0;
+    padding: 2%;
+    width: 500px;
+    height: 25px;
+}
+
+#contactForm textarea
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: 0;
+    padding: 2%;
+    width: 87%;
+    height: 150px;
+    resize: none;
+}
+
+#contactForm input[type="submit"]
+{
+    width: 150px;
+    height: 50px;
+    border: 0;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 0;
+    background-color: #be1622;
+    cursor: pointer;
+}
+
+#contactForm input[type="submit"]:hover
+{
+    background-color: #bf6e15;
+}
+/*END Contact Form*/
+
+/*Contact Form Validation*/
+#tick1
+{
+    color: #33cc33;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+#cross1
+{
+    color: #ff0000;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+#tick2
+{
+    color: #33cc33;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+#cross2
+{
+    color: #ff0000;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+#tick3
+{
+    color: #33cc33;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+#cross3
+{
+    color: #ff0000;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+#tick4
+{
+    color: #33cc33;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+
+#cross4
+{
+    color: #ff0000;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    display: none;
+}
+/*END Contact Form Validation*/
+/*END Contact Page*/
+
+/*Order Page*/
+#wrapperOrder
+{
+    width: 1000px;
+    height: 1523px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    border: solid 5px #be1622;
+    background-color: #ffffff;
+}
+
+#contentOrder
+{
+    width: 1000px;
+    height: 1090px;
+    background-color: #f2f2f2;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Order Form Styling*/
+#orderFormWrap
+{
+    width: 42%;
+    height: auto;
+    padding: 2%;
+    float: left;
+}
+
+#orderForm
+{
+    width: 100%;
+    margin: auto;
+    padding: 1% 7%;
+    background-color: #ffffff;
+}
+
+#orderForm h2
+{
+    color: #be1622;
+}
+
+#orderForm fieldset
+{
+    border: 0;
+    background-color: #f2f2f2;
+}
+
+#orderForm input[type="text"]
+{
+    width: 50%;
+    height: 10px;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 0;
+    padding: 2%;   
+}
+
+.price
+{
+    color: #bf6e15;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 22px;
+    float: right;
+}
+    
+#orderForm input[value="Place Order"]
+{
+    width: 160px;
+    height: 50px;
+    border: 0;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #be1622;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#orderForm input[value="Place Order"]:hover
+{
+    background-color: #bf6e15;
+}
+
+#orderForm input[value="Reset"]
+{
+    width: 120px;
+    height: 50px;
+    border: 0;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #be1622;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#orderForm input[value="Reset"]:hover
+{
+    background-color: #bf6e15;
+}
+
+#button
+{
+    text-align: center;
+}
+/*END Order Form*/
+
+/*Order Form Validation*/
+.error
+{
+    color: #ff0000;
+    text-align: center;
+}
+/*END Order Form Validation*/
+
+/*Order Summary Styling*/
+#orderSummary
+{
+    width: 35%;
+    height: auto;
+    padding: 2%;
+    float: right;
+    background-color: #f2f2f2;
+    border: solid 30px #ffffff;
+    margin: 2% 2% auto auto;
+}
+
+#orderSummary h1
+{
+    color: #be1622;
+    text-align: center;
+    margin-top: -2%;
+}
+
+#price
+{
+    color: #be1622;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*END Order Summary*/
