@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Solent Pizzas</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500%7CAlegreya+Sans+SC:400,800,900" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="scripts/indexPage.js"></script>
+    </head>
+    
+    <body onLoad="dateTime(); runSlideshow();">
+        <div id="wrapperIndex">
+            <header>
+                <a href="index.html">
+                    <img id="headerImg" src="images/header.png" alt="Solent Pizza header and logo">
+                </a>
+            </header><!--HeaderEND-->
+            <div id="navigation">
+                <ul id="navBar">
+                    <li><a class="currPage" href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </div><!--NavBarEND-->
+            <div id="contentIndex">
+                <img id="previous" src="images/previous.png" alt="Previous Button" onclick="changeImage(-1); return false;">
+                <div id="imgSlideshow">
+                    <img src="images/slide1.jpg" id="slideshow" alt="Pizza Slider Image One">
+                </div><!--SlideshowEND-->
+                <img id="next" src="images/next.png" alt="Next Button" onclick="changeImage(1); return false;">
+            </div><!--ContentEND-->
+            <footer>
+                <div id="dateTime">
+                    <div id="clock">10 : 55 : 00</div>
+                </div>
+            </footer><!--FooterEND-->
+        </div><!--WrapperEND-->
+    </body>
+</html>
