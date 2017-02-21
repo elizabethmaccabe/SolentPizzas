@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us - Solent Pizzas</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500%7CAlegreya+Sans+SC:400,800,900" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="scripts/contactPage.js"></script>
+    </head>
+    
+    <body onLoad="validate(); contactValidate();">
+        <div id="wrapperContact">
+            <header>
+                <a href="index.html">
+                    <img id="headerImg" src="images/header.png" alt="Solent Pizza header and logo">
+                </a>
+            </header><!--HeaderEND-->
+            <div id="navigation">
+                <ul id="navBar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="currPage" href="contact.html">Contact</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </div><!--NavBarEND-->
+            <div id="contentContact">
+                <div id="map">
+                    <h1>Pay us a visit!</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2622.8903139574895!2d-1.3968144122181345!3d50.90435884103369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4874714b5167e17f%3A0xe21be57c03227fa0!2sSt+Mary+St%2C+Southampton+SO14%2C+UK!5e0!3m2!1sen!2suk!4v1458410303185" width="600" height="450" style="border:0" allowfullscreen>
+                    </iframe>
+                </div><!--MapContainerEND-->
+                <div id="contactFormWrap">
+                    <h1>Got a question? Feel free to fill out this form</h1>
+                    <form id="contactForm">
+                        <fieldset>
+                            <p><input type="text" id="firstName" name="firstName" placeholder="First Name" onchange="contactValidate();"><span id="tick1"> &#x2714;</span><span id="cross1"> &#x2718;</span></p>
+                            <p class="error" id="errFirstNameRequired" style="display: none">Please enter first name</p>
+
+                            <p><input type="text" id="lastName" name="lastName" placeholder="Last Name" onchange="contactValidate();"><span id="tick2"> &#x2714;</span><span id="cross2"> &#x2718;</span></p>
+                            <p class="error" id="errLastNameRequired" style="display: none">Please enter last name</p>
+
+                            <p><input type="text" id="email" name="email" placeholder="Email Address" onchange="contactValidate();"><span id="tick3"> &#x2714;</span><span id="cross3"> &#x2718;</span></p>
+                            <p class="error" id="errEmailRequired" style="display: none">Please enter an email address</p>
+
+                            <p><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"></p>
+
+                            <p><textarea id="message" name="message" placeholder="Your Message" onchange="contactValidate();"></textarea><span id="tick4"> &#x2714;</span><span id="cross4"> &#x2718;</span></p>
+                            <p class="error" id="errMessageRequired" style="display: none">Please enter your message</p>
+
+                            <p><input type="submit" value="Send"></p>
+                        </fieldset>
+                    </form>
+                </div><!--FormContainerEND-->
+            </div><!--ContentEND-->
+            <footer></footer>
+        </div><!--WrapperEND-->
+    </body>
+</html>
