@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Online Order - Solent Pizzas</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500%7CAlegreya+Sans+SC:400,800,900" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="scripts/orderPage.js"></script>
+    </head>
+    
+    <body onLoad="validate(); order();">
+        <div id="wrapperOrder">
+            <header>
+                <a href="index.html">
+                    <img id="headerImg" src="images/header.png" alt="Solent Pizza header and logo">
+                </a>
+            </header><!--HeaderEND-->
+            <div id="navigation">
+                <ul id="navBar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="currPage" href="order.html">Order</a></li>
+                </ul>
+            </div><!--NavBarEND-->
+            <div id="contentOrder">
+                <div id="orderFormWrap">
+                    <form id="orderForm">
+                        <h2>Choose your base: *</h2>
+                        <fieldset>
+                            <p><label><input type="radio" name="base" value="baseSmall" data-price="5.00" data-human-desc="Small Base - &pound5.00"> Small</label><span class="price">£5.00</span></p>
+                            <p><label><input type="radio" name="base" value="baseMedium" data-price="7.50" data-human-desc="Medium Base - &pound7.50"> Medium</label><span class="price">£7.50</span></p>
+                            <p><label><input type="radio" name="base" value="baseLarge" data-price="10.00" data-human-desc="Large Base - &pound10.00"> Large</label><span class="price">£10.00</span></p>
+                            <p><label><input type="radio" name="base" value="baseExtra" data-price="12.50" data-human-desc="Extra Large Base - &pound12.50"> Extra Large</label><span class="price">£12.50</span></p>
+                            <p class="error" id="errBaseRequired" style="display: none">A pizza base must be selected</p>
+                        </fieldset>
+                        <h2>Select one or more toppings: *</h2>
+                        <fieldset>
+                            <p><label><input type="checkbox" name="topping" value="toppingCheese" data-price="0.20" data-human-desc="Cheese - &pound0.20"> Cheese</label><span class="price">£0.20</span></p>
+                            <p><label><input type="checkbox" name="topping" value="toppingMushrooms" data-price="0.40" data-human-desc="Mushrooms - &pound0.40"> Mushrooms</label><span class="price">£0.40</span></p>
+                            <p><label><input type="checkbox" name="topping" value="toppingHam" data-price="0.50" data-human-desc="Ham - &pound0.50"> Ham</label><span class="price">£0.50</span></p>
+                            <p><label><input type="checkbox" name="topping" value="toppingAnchovies" data-price="0.60" data-human-desc="Anchovies - &pound0.60"> Anchovies</label><span class="price">£0.60</span></p>
+                            <p class="error" id="errToppingRequired" style="display: none">A minimum of one topping must be selected</p>
+                        </fieldset>
+                        <h2>Extras:</h2>
+                        <fieldset>
+                            <p><label><input type="checkbox" name="extra" value="extraChips" data-price="1.50" data-human-desc="Chips - &pound1.50"> Chips</label><span class="price">£1.50</span></p>
+                            <p><label><input type="checkbox" name="extra" value="extraGarlic" data-price="2.00" data-human-desc="Garlic Bread - &pound2.00"> Garlic Bread</label><span class="price">£2.00</span></p>
+                        </fieldset>
+                        <h2>Delivery Information:</h2>
+                        <fieldset>
+                            <p><label>Full Name<input type="text" name="info"></label></p>
+                            <p><label>Address Line 1<input type="text" name="info"></label></p>
+                            <p><label>Address Line 2<input type="text" name="info"></label></p>
+                            <p><label>Post Code<input type="text" name="info"></label></p>
+                        </fieldset>
+                        <p id="button"><input type="submit" value="Place Order"><input type="reset" value="Reset"></p>
+                    </form>
+                </div><!--FormContainerEND-->
+                <div id="orderSummary">
+                    <h1>Order Summary</h1>
+                    <p id="items">No Items Selected</p>
+                    <p id="price">Total: &pound;0.00</p>
+                </div><!--OrderSummaryContainerEND-->
+            </div><!--ContentEND-->
+            <footer></footer>
+        </div><!--WrapperEND-->
+    </body>
+</html>
